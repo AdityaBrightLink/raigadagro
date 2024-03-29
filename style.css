@@ -1,0 +1,146 @@
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav :first-child {
+    margin-right: auto;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    /* background-color: white; */
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar.open {
+    display: flex;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+#navbar-logo-img1{
+    width: 50%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+/* ***Navbar css******ended***** */
+
+.Raigdkar-section1{
+    position: relative;
+}
+.Raigdkar-section1-bgimg{
+    background-image: url('images/Sec1\ bg-img.png');
+    height: 91vh;
+    position: absolute;
+}
+.Raigdkar-section1-bgimg-p1 {
+    width: 70%;
+    font-family: Dosis;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    position: absolute;
+    margin-top: 7%;
+    line-height: 2.9rem;
+}
+.Raigdkar-section1-bgimg-p2 {
+    width: 50%;
+    font-family: Poppins;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 16%;
+}
+#Sec1-blinker-id {
+    position: absolute;
+    top: 14%;
+    right: 36%;
+    width: 6%;
+}
+
+@media only screen and (max-width:400px)
+{
+    .Raigdkar-section1-bgimg-p1 {
+        width: 100%;
+        font-size: 2rem;
+        color: #FFFFFF;
+        font-weight: 600;
+        position: absolute;
+        margin-top: 7%;
+        line-height: 2.2rem;
+    }
+    .Raigdkar-section1-bgimg-p2 {
+        width: 100%;
+        font-family: Poppins;
+        font-size: 1rem;
+        color: #FFFFFF;
+        font-weight: 500;
+        margin-top: 40%;
+    }
+}
